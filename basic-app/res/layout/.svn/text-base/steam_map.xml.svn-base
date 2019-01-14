@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Wright 105 key   android:apiKey="0dkLTxNjPuYfS55HHuKgde127n2JsgkR2VkPyeg" -->
+<!-- Goadrich key  android:apiKey="0CEEdeZY_R-flGwIjx6FIF-irSvwh9J1uNairrg"-->
+<!-- Michael API key android:apiKey="0oA6m_zslEIwsVxZMt7lD_gbsH46Fpr1T9-hD9Q" -->
+<com.google.android.maps.MapView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mapview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:apiKey="0CEEdeZY_R-flGwIjx6FIF-irSvwh9J1uNairrg"
+/>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/find_me" 
+  	android:enabled="true" android:name="@string/find_me"/>
+  <item android:id="@+id/marker"
+  	android:name="@string/marker"
+  	android:enabled="true" />
+  <item android:id="@+id/layers"
+    android:name="@string/layers"
+    android:enabled="true" />
+  <item android:id="@+id/store"
+    android:name="@string/store"
+    android:enabled="true" />
+</menu>

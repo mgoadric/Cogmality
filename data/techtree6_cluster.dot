@@ -1,0 +1,492 @@
+digraph techtree {
+wood -> beam;
+wood -> beam;
+beam -> frame;
+beam -> frame;
+beam -> handle;
+beam -> handle;
+beam -> handle;
+
+sand -> stonewedge;
+stone -> stonewedge;
+stone -> stonewedge;
+stonewedge -> stoneaxe;
+handle -> stoneaxe;
+
+beam -> stonepick;
+stone -> stonepick;
+stone -> stonepick;
+stonepick -> stonepickaxe;
+handle -> stonepickaxe;
+
+sand -> copperwedge;
+copper_bar -> copperwedge;
+copper_bar -> copperwedge;
+hammer -> copperwedge [color=lightsalmon];
+copperwedge -> copperaxe;
+handle -> copperaxe;
+
+beam -> copperpick;
+copper_bar -> copperpick;
+copper_bar -> copperpick;
+hammer -> copperpick [color=lightsalmon];
+copperpick -> copperpickaxe;
+handle -> copperpickaxe;
+
+sand -> ironwedge;
+iron_bar -> ironwedge;
+iron_bar -> ironwedge;
+hammer -> ironwedge [color=lightsalmon];
+ironwedge -> ironaxe;
+handle -> ironaxe;
+
+beam -> ironpick;
+iron_bar -> ironpick;
+iron_bar -> ironpick;
+hammer -> ironpick [color=lightsalmon];
+ironpick -> ironpickaxe;
+handle -> ironpickaxe;
+
+stone -> furnace;
+stone -> furnace;
+stone -> furnace;
+stone -> furnace;
+iron_ore -> iron_bar;
+iron_ore -> iron_bar;
+wood -> furnace [color=palegreen];
+coal -> brick_furnace [color=red];
+brick_furnace -> iron_bar  [color=red];
+copper_ore -> copper_bar;
+copper_ore -> copper_bar;
+furnace -> copper_bar [color=pink];
+gold_ore -> gold_bar;
+gold_ore -> gold_bar;
+brick_furnace -> gold_bar [color=red];
+
+steel_wire -> gear;
+iron_wire -> gear;
+steel_hammer -> gear [color=gray];
+
+stone -> hammer;
+handle -> hammer;
+thread -> hammer;
+iron_bar -> iron_wire;
+iron_bar -> iron_wire;
+hammer -> iron_wire [color=lightsalmon];
+copper_bar -> copper_wire;
+copper_bar -> copper_wire;
+hammer -> copper_wire [color=lightsalmon];
+gold_bar -> gold_wire;
+gold_bar -> gold_wire;
+steel_hammer -> gold_wire [color=gray];
+sand -> glass;
+furnace -> glass [color=pink];
+sand -> glass;
+glass -> bottle;
+glass -> bottle;
+furnace -> bottle  [color=pink];
+wool -> thread;
+wool -> thread;
+thread -> fabric;
+thread -> fabric;
+loom -> fabric [color=plum];
+
+fabric -> sheet;
+fabric -> sheet;
+loom -> sheet [color=plum];
+
+frame -> crate;
+frame -> crate;
+workbench -> crate [color=palegreen];
+
+loom -> shirt [color=plum];
+
+wool -> shirt;
+fabric -> shirt;
+sheet -> shirt;
+
+iron_wire -> iron_pipe;
+iron_wire -> iron_pipe;
+hammer -> iron_pipe [color=lightsalmon];
+
+brass_wire -> brass_pipe;
+brass_wire -> brass_pipe;
+steel_hammer -> brass_pipe [color=gray70];
+
+steel_wire -> steel_pipe;
+steel_wire -> steel_pipe;
+steel_hammer -> steel_pipe [color=gray70];
+
+bronze_wire -> bronze_pipe;
+bronze_wire -> bronze_pipe;
+steel_hammer -> bronze_pipe [color=gray70];
+
+copper_wire -> copper_pipe;
+copper_wire -> copper_pipe;
+hammer -> copper_pipe [color=lightsalmon];
+
+bronze_bar -> bronze_wire;
+bronze_bar -> bronze_wire;
+steel_hammer -> bronze_wire [color=gray70];
+
+brass_bar -> brass_wire;
+brass_bar -> brass_wire;
+steel_hammer -> brass_wire [color=gray70];
+
+/*
+stonepickaxe -> copper_ore  [label="pick up", color=gray];
+copperpickaxe -> coal  [label="pick up", color=gray];
+copperpickaxe -> iron_ore [label="pick up", color=gray];
+ironpickaxe -> gold_ore [label="pick up", color=gray];
+stoneaxe -> copperaxe [label="prereq"];
+copperaxe -> ironaxe [label="prereq"];
+bottle -> kettle [label="prereq"];
+kettle -> barrel [label="prereq"];
+hourglass -> watch [label="prereq"];
+bottle -> water [label="pick up"];
+steel_pickaxe -> tin_ore [label="pickup"];
+steel_pickaxe -> zinc_ore [label="pickup"];
+*/
+
+iron_pipe -> wheel;
+beam -> wheel;
+hammer -> wheel [color=lightsalmon];
+
+
+glass -> lens;
+sand -> lens;
+
+lens -> monocle;
+gold_wire -> monocle;
+thread -> monocle;
+
+gear -> watch;
+bronze_wire -> watch;
+glass -> watch;
+gold_plate -> watch;
+
+crate -> skyship;
+sail -> skyship;
+propeller -> skyship;
+steam_engine -> skyship;
+
+monocle -> suit;
+watch -> suit;
+shirt -> suit;
+tophat -> suit;
+
+sheet -> kite;
+iron_wire -> kite;
+iron_wire -> kite;
+thread -> kite;
+
+tarp -> sail;
+steel_wire -> sail;
+steel_wire -> sail;
+thread -> sail;
+
+lens -> spyglass;
+lens -> spyglass;
+brass_pipe -> spyglass;
+steel_hammer -> spyglass [color=grey50];
+
+hammer -> pulp [color=lightsalmon];
+water -> pulp;
+wood -> pulp;
+
+water -> felt;
+wool -> felt;
+
+furnace -> parchement [color=pink];
+pulp -> parchement;
+pulp -> parchement;
+
+parchement -> book;
+parchement -> book;
+thread -> book;
+loom -> book [color=plum];
+
+felt -> tophat;
+felt -> tophat;
+frame -> tophat;
+loom -> tophat [color=plum];
+
+beam -> loom;
+beam -> loom;
+copper_wire -> loom;
+thread -> loom;
+workbench -> loom [color=green];
+
+stone -> dust
+stone -> dust
+hammer -> dust [color=lightsalmon];
+
+sand -> mortar
+dust -> mortar
+water -> mortar
+
+beam -> workbench;
+beam -> workbench;
+beam -> workbench;
+beam -> workbench;
+
+glass -> window;
+glass -> window;
+frame -> window;
+workbench -> window [color=green];
+
+clay -> brick;
+clay -> brick;
+furnace -> brick [color=pink];
+
+brick -> wall;
+brick -> wall;
+mortar -> wall;
+mortar -> wall;
+
+copper_plate -> kettle;
+frame -> kettle;
+hammer -> kettle [color=lightsalmon];
+
+brick -> brick_furnace;
+brick -> brick_furnace;
+brick -> brick_furnace;
+brick -> brick_furnace;
+
+canvas -> tarp;
+canvas -> tarp;
+loom -> tarp [color=plum];
+
+sheet -> canvas;
+sheet -> canvas;
+loom -> canvas [color=plum];
+
+canvas -> store;
+wall -> store;
+window -> store;
+book -> store;
+
+bottle -> hourglass;
+bottle -> hourglass;
+sand -> hourglass;
+furnace -> hourglass [color=pink];
+
+beam -> barrel;
+beam -> barrel;
+iron_pipe -> barrel;
+iron_pipe -> barrel;
+workbench -> barrel [color=green];
+
+iron_ore -> steel_bar;
+iron_ore -> steel_bar;
+coal -> steel_bar;
+brick_furnace -> steel_bar [color=red];
+
+copper_ore -> brass_bar;
+copper_ore -> brass_bar;
+zinc_ore -> brass_bar;
+brick_furnace -> brass_bar [color=red];
+
+copper_ore -> bronze_bar;
+copper_ore -> bronze_bar;
+tin_ore -> bronze_bar;
+brick_furnace -> bronze_bar [color=red];
+
+iron_bar -> iron_plate;
+iron_bar -> iron_plate;
+iron_bar -> iron_plate;
+hammer -> iron_plate  [color=lightsalmon];
+
+steel_bar -> steel_plate;
+steel_bar -> steel_plate;
+steel_bar -> steel_plate;
+steel_hammer -> steel_plate [color=gray];
+
+copper_bar -> copper_plate;
+copper_bar -> copper_plate;
+copper_bar -> copper_plate;
+hammer -> copper_plate [color=lightsalmon];
+
+gold_bar -> gold_plate;
+gold_bar -> gold_plate;
+gold_bar -> gold_plate;
+steel_hammer -> gold_plate [color=gray];
+
+bronze_bar -> bronze_plate;
+bronze_bar -> bronze_plate;
+bronze_bar -> bronze_plate;
+steel_hammer -> bronze_plate [color=gray];
+
+brass_bar -> brass_plate;
+brass_bar -> brass_plate;
+brass_bar -> brass_plate;
+steel_hammer -> brass_plate [color=gray];
+
+steel_bar -> steel_wire;
+steel_bar -> steel_wire;
+steel_hammer -> steel_wire [color=gray70];
+
+steel_bar -> steel_hammer;
+thread -> steel_hammer;
+handle -> steel_hammer;
+
+brass_plate -> horn;
+steel_pipe -> horn;
+bronze_pipe -> horn;
+steel_hammer -> horn [color=gray70];
+
+steel_bar -> steel_pick;
+steel_bar -> steel_pick;
+beam -> steel_pick;
+steel_hammer -> steel_pick [color=gray70];
+
+steel_pick -> steel_pickaxe;
+handle -> steel_pickaxe;
+
+wheel -> propeller;
+bronze_plate -> propeller;
+steel_hammer -> propeller [color=grey];
+
+copper_pipe -> steam_engine;
+steel_plate -> steam_engine;
+iron_plate -> steam_engine;
+gear -> steam_engine;
+
+water -> steam_engine [color=blue];
+
+horn -> VICTORY;
+skyship -> VICTORY;
+suit -> VICTORY;
+spyglass -> VICTORY;
+
+kite [peripheries=2];
+spyglass [peripheries=2];
+monocle [peripheries=2];
+watch [peripheries=2];
+suit [peripheries=2];
+tarp [peripheries=2];
+store [peripheries=2];
+
+skyship [peripheries=3];
+
+water [color=lightblue,style=filled,shape=box];
+
+coal [color=pink,style=filled,shape=box];
+
+
+subgraph cluster_fabric{
+wool [color=plum,style=filled,shape=box];
+loom [color=plum,style=filled,shape=diamond];
+thread [color=plum,style=filled];
+fabric [color=plum,style=filled];
+sheet [color=plum,style=filled];
+shirt [color=plum,style=filled];
+canvas [color=plum,style=filled];
+tarp [color=plum,style=filled];
+sail [color=plum,style=filled];
+kite [color=plum,style=filled];
+suit [color=plum,style=filled];
+felt [color=plum,style=filled];
+tophat [color=plum,style=filled];
+}
+subgraph cluster_lumber{
+wood [color=palegreen,style=filled,shape=box];
+workbench [color=palegreen,style=filled,shape=diamond];
+beam [color=palegreen,style=filled];
+handle [color=palegreen,style=filled];
+pulp [color=palegreen,style=filled];
+parchement [color=palegreen,style=filled];
+book [color=palegreen,style=filled];
+frame [color=palegreen,style=filled];
+crate [color=palegreen,style=filled];
+barrel [color=palegreen,style=filled,shape=diamond];
+}
+subgraph cluster_sand{
+sand [color=lightyellow,style=filled,shape=box];
+bottle [color=lightyellow,style=filled,shape=diamond];
+glass [color=lightyellow,style=filled];
+window [color=lightyellow,style=filled];
+hourglass [color=lightyellow,style=filled];
+monocle [color=lightyellow,style=filled];
+lens [color=lightyellow,style=filled];
+}
+subgraph cluster_rock{
+stone [color=gray,style=filled,shape=box];
+stoneaxe [color=gray,style=filled,shape=diamond];
+stonepickaxe [color=gray,style=filled,shape=diamond];
+stonewedge [color=gray,style=filled];
+stonepick [color=gray,style=filled];
+dust [color=gray,style=filled];
+mortar [color=gray,style=filled];
+}
+hammer [color=gray,style=filled,shape=diamond];
+furnace [color=gray,style=filled,shape=diamond];
+
+subgraph cluster_copper{
+copper_ore [color=orange,style=filled,shape=box];
+copperaxe [color=orange,style=filled,shape=diamond];
+copperpickaxe [color=orange,style=filled,shape=diamond];
+copper_bar [color=orange,style=filled];
+copperwedge [color=orange,style=filled];
+copperpick [color=orange,style=filled];
+copper_wire [color=orange,style=filled];
+copper_plate [color=orange,style=filled];
+copper_pipe [color=orange,style=filled];
+kettle [color=orange,style=filled,shape=diamond];
+}
+subgraph cluster_iron{
+iron_ore [color=darkgoldenrod,style=filled,shape=box];
+ironaxe [color=darkgoldenrod,style=filled,shape=diamond];
+ironpickaxe [color=darkgoldenrod,style=filled,shape=diamond];
+iron_bar [color=darkgoldenrod,style=filled];
+ironwedge [color=darkgoldenrod,style=filled];
+ironpick [color=darkgoldenrod,style=filled];
+iron_wire [color=darkgoldenrod,style=filled];
+iron_pipe [color=darkgoldenrod,style=filled];
+iron_plate [color=darkgoldenrod,style=filled];
+iron_pipe [color=darkgoldenrod,style=filled];
+wheel [color=darkgoldenrod,style=filled];
+}
+subgraph cluster_steel{
+gear [color=grey50,style=filled];
+steel_bar [color=grey50,style=filled];
+steel_pick [color=grey50,style=filled];
+steel_wire [color=grey50,style=filled];
+steel_plate [color=grey50,style=filled];
+steel_pipe [color=grey50,style=filled];
+steam_engine [color=grey50,style=filled];
+steel_pickaxe [color=grey50,style=filled,shape=diamond];
+}
+steel_hammer [color=grey50,style=filled,shape=diamond]; 
+
+subgraph cluster_gold{
+gold_ore [color=gold,style=filled,shape=box];
+gold_bar [color=gold,style=filled];
+gold_wire [color=gold,style=filled];
+gold_plate [color=gold,style=filled];
+watch [color=gold,style=filled];
+}
+subgraph cluster_brass{
+zinc_ore [color=aquamarine,style=filled,shape=box];
+brass_bar [color=aquamarine,style=filled];
+brass_plate [color=aquamarine,style=filled];
+brass_pipe [color=aquamarine,style=filled];
+brass_wire [color=aquamarine,style=filled];
+horn [color=aquamarine,style=filled];
+spyglass [color=aquamarine,style=filled];
+}
+subgraph cluster_bronze{
+tin_ore [color=gray70,style=filled,shape=box];
+bronze_bar [color=gray70,style=filled];
+bronze_plate [color=gray70,style=filled];
+bronze_pipe [color=gray70,style=filled];
+bronze_wire [color=gray70,style=filled];
+propeller [color=gray70,style=filled];
+}
+subgraph cluster_clay{
+clay [color=red,style=filled,shape=box];
+brick [color=red,style=filled];
+wall [color=red,style=filled];
+}
+brick_furnace [color=red,style=filled,shape=diamond];
+}

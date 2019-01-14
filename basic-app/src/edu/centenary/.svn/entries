@@ -1,0 +1,38 @@
+10
+
+dir
+2
+svn+ssh://mgoadric@cs.centenary.edu/usr/local/svn/cogmality/basic-app/src/edu/centenary
+svn+ssh://mgoadric@cs.centenary.edu/usr/local/svn/cogmality
+
+
+
+2012-06-27T00:58:54.477933Z
+2
+mgoadric
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+0628c528-bfc8-11e1-8cb0-231a0ee9ffd8
+
+
+
+
+
+
+0
+
+cogmality
+dir
+

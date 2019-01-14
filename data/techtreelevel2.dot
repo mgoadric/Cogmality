@@ -1,0 +1,20 @@
+digraph techtreelevel2 {
+glass -> monocle;
+gold_wire -> monocle;
+thread -> monocle;
+gear -> watch;
+gear -> watch;
+glass -> watch;
+gold_wire -> watch;
+monocle -> suit;
+watch -> suit;
+shirt -> suit;
+monocle -> spectacles;
+monocle -> spectacles;
+iron_wire -> spectacles;
+sheet -> kite;
+iron_wire -> kite;
+iron_wire -> kite;
+thread -> kite;
+
+}

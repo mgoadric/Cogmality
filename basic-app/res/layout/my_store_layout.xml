@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <GridView
+        android:id="@+id/storegrid"
+        android:layout_width="wrap_content"
+        android:layout_height="120dip"
+        android:padding="10dip"
+        android:gravity="center"
+        android:numColumns="5"
+        android:background="@drawable/table_background"
+        >
+    </GridView>
+    
+      <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:layout_gravity="center"
+        android:text="Place up to 10 items in your store."
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+    </TextView>
+
+        
+    <ListView
+        android:id="@+id/storelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:paddingTop="16dip" >
+    </ListView>
+
+</LinearLayout>

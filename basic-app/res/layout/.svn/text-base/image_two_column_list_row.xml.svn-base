@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <TwoLineListItem
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:paddingTop="2dip"
+     android:paddingBottom="2dip"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:mode="oneLine"
+  >
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="6dip"
+        android:src="@drawable/icon" />
+<TextView
+    android:id="@+id/toptext"
+    android:gravity="left"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6dip"
+    android:layout_marginTop="6dip"
+    android:layout_toRightOf="@+id/icon"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+/>
+<TextView
+    android:id="@+id/bottomtext"
+    android:gravity="right"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6dip"
+    android:layout_marginTop="6dip"
+    android:layout_marginRight="6dip"
+    android:layout_toRightOf="@+id/toptext"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+/>
+</TwoLineListItem>
